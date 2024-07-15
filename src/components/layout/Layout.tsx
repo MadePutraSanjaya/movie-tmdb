@@ -1,11 +1,20 @@
+"use client";
 import React from 'react'
+import { Layout } from 'antd';
+import Navbar from '../atoms/navbar/Navbar';
+const { Content } = Layout;
 
-const Layout = ({
+const Home = ({
   children
 }: Readonly<{ children: React.ReactNode }>) => {
   return (
-    <div>{children}</div>
+    <Layout className='min-h-screen'>
+      <Navbar />
+      <Content className='pt-0 px-[48px] mt-[24px] mb-[40px]'>
+        {children}
+      </Content>
+    </Layout>
   )
 }
 
-export default Layout
+export default Home
