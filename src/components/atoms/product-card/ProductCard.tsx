@@ -5,7 +5,7 @@ const ProductCard = () => {
   return (
     <div className="w-64 rounded-lg border border-gray-200 bg-white shadow">
     <div className="w-full h-36 relative">
-     <Image src="" width={100} height={100} alt='tes' />
+     <Image src="/" width={100} height={100} alt='tes' />
     </div>
     <div className="p-5">
       <a href="#" className="flex items-center justify-between gap-5">
